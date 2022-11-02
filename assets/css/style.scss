@@ -1,0 +1,168 @@
+* {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.logo-lg img {
+  width: 100px;
+  height: 73px;
+  object-fit: contain;
+}
+
+.logo-sm img {
+  width: 35px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.btn-primary-shape {
+  width: 140px;
+  margin: 0px auto;
+  height: 50px;
+  background-color: #AF1E2C;
+  border: 0px !important;
+  outline: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  &.small-btn{
+      width: 150px !important;
+      margin: unset !important;
+  }
+
+  i {
+      margin-inline-end: 10px;
+      color: #fff;
+      font-size: 18px;
+  }
+
+  span {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+  }
+}
+
+.first-color {
+  background-color: #CEE2FD;
+  border: none;
+
+  h4 {
+    color: #AF1E2C;
+  }
+
+  p {
+    color: #000;
+  }
+}
+
+.second-color {
+  background-color: #FFEFE2;
+  border: none;
+
+  h4 {
+    color: #D16014;
+  }
+
+  p {
+    color: #000;
+  }
+}
+
+.third-color {
+  background-color: rgba($color: #CBFCCD, $alpha: 0.4);
+  border: none;
+
+  h4 {
+    color: #33A037;
+  }
+
+  p {
+    color: #000;
+  }
+}
+
+.four-color {
+  border: none;
+  background-color: #F9FBFC;
+
+  h4 {
+    color: #333;
+  }
+
+  p {
+    color: #000;
+  }
+}
+
+.nav-tabs {
+  border: 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding-bottom: 5px;
+
+  &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-thumb:hover {
+    background: transparent !important;
+    width: 0px !important;
+    background-color: transparent !important;
+  }
+
+  .nav-item {
+    margin-inline-end: 15px;
+
+    .nav-link {
+      width: 120px;
+      height: 50px;
+      border: 1px solid #AF1E2C;
+      background-color: #fff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      color: #AF1E2C;
+      font-size: 15px;
+      font-weight: 700;
+
+      &.active {
+        border-radius: 10px;
+        background-color: #AF1E2C;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 999px) {
+  .nav-tabs {
+    
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  }
+
+  .table-responsive {
+    width: 100%;
+    overflow-x: scroll;
+    
+    th, td {
+      min-width: 220px;
+      text-align: center;
+    }
+  }
+
+  .page-title-box {
+    flex-direction: column !important;
+    align-items: center !important;
+    align-content: flex-start;
+    align-items: flex-start !important;
+    text-align: unset !important;
+    justify-content: flex-start !important;
+  }
+}

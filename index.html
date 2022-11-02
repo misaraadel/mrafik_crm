@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      ادارة علاقات العملاء
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/icon.jpg">
+    <!-- Bootstrap Css -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <header id="page-topbar">
+        <div class="navbar-header">
+          <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+              <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                  <img src="assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                <span class="logo-lg">
+                  <img src="assets/images/logo.jpg" alt="" height="20">
+                </span>
+              </a>
+
+              <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                  <img src="assets/images/logo-sm.png" alt="" height="22">
+                </span>
+                
+                <span class="logo-lg">
+                  <img src="assets/images/logo-light.png" alt="" height="20">
+                </span>
+              </a>
+            </div>
+
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+              <i class="fa fa-fw fa-bars"></i>
+            </button>
+
+            <!-- App Search-->
+            <form class="app-search d-none d-lg-block">
+              <div class="position-relative">
+                <input type="text" class="form-control" placeholder="البحث...">
+                <span class="uil-search"></span>
+              </div>
+            </form>
+          </div>
+
+          <div class="d-flex">
+            <div class="dropdown d-inline-block d-lg-none ml-2">
+              <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="uil-search"></i>
+              </button>
+              
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                aria-labelledby="page-header-search-dropdown">
+                <form class="p-3">
+                  <div class="form-group m-0">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="البحث ..." aria-label="Recipient's username">
+                      
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="dropdown d-inline-block language-switch">
+              <button type="button" class="btn header-item waves-effect"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/flags/arabic.png" alt="Header Language" height="16">
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">
+                    english
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="dropdown d-none d-lg-inline-block ml-1">
+              <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                <i class="uil-minus-path"></i>
+              </button>
+            </div>
+
+            <div class="dropdown d-inline-block">
+              <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="uil-bell"></i>
+                <span class="badge badge-danger badge-pill">3</span>
+              </button>
+
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                aria-labelledby="page-header-notifications-dropdown">
+                <div class="p-3">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h5 class="m-0 font-size-16"> الاشعارات </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-simplebar style="max-height: 230px;">
+                  <a href="" class="text-reset notification-item">
+                    <div class="media">
+                      <div class="avatar-xs mr-3">
+                        <span class="avatar-title bg-primary rounded-circle font-size-16">
+                          <i class="uil-shopping-basket"></i>
+                        </span>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mt-0 mb-1">عنوان الشعار</h6>
+                        <div class="font-size-12 text-muted">
+                          <p class="mb-1">
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء .
+                          </p>
+                          <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown d-inline-block">
+              <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg" alt="Header Avatar">
+                <span class="d-none d-xl-inline-block ml-1 font-weight-medium font-size-15">اسم العميل</span>
+                <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+              </button>
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">
+                  تسجيل خروج
+                </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="vertical-menu">
+        <div class="navbar-brand-box">
+          <a href="index.html" class="logo logo-dark">
+            <span class="logo-sm">
+              <img src="assets/images/logo-sm.png" alt="" height="22">
+            </span>
+
+            <span class="logo-lg">
+              <img src="assets/images/logo.jpg" alt="" height="20">
+            </span>
+          </a>
+
+          <a href="index.html" class="logo logo-light">
+            <span class="logo-sm">
+              <img src="assets/images/logo-sm.png" alt="" height="22">
+            </span>
+
+            <span class="logo-lg">
+              <img src="assets/images/logo-light.png" alt="" height="20">
+            </span>
+          </a>
+        </div>
+
+        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+          <i class="fa fa-fw fa-bars"></i>
+        </button>
+
+        <div data-simplebar class="sidebar-menu-scroll">
+          <div id="sidebar-menu">
+            <ul class="metismenu list-unstyled" id="side-menu">
+
+              <li>
+                <a href="index.html">
+                  <i class="uil-home-alt"></i>
+                  <span>
+                    الرئيسية
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="services.html" class="waves-effect">
+                  <i class="uil-window-section"></i>
+
+                  <span>
+                    اختيار خدمة
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="alret.html" class="waves-effect">
+                  <i class="uil-file-alt"></i>
+                  <span>
+                    البلاغات
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Sidebar -->
+        </div>
+      </div>
+      <!-- Left Sidebar End -->
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 mb-1">
+                <div class="page-title-box d-flex align-items-center justify-content-between">
+                  <h4 class="mb-0">
+                    شركة الراجح للمقاولات المحدودة
+                  </h4>
+
+                  <h4>
+                    <span class="text-success mr-1"><i class="mdi mdi-arrow-up-bold ml-1"></i></span>
+                    عدد الفروع
+
+                    <span class="text-success mr-1">
+                      2
+                    </span>
+                  </h4>
+                </div>
+              </div>
+            </div> 
+
+            <div class="row">
+              <div class="col-12">
+                <div class="page-title-box d-flex align-items-center justify-content-between">
+                  <a href="services.html" class="btn-primary-shape small-btn">
+                    <i class="fas fa-pen"></i>
+
+                    <span>
+                      اضافة خدمة
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  
+            <!-- end page title -->
+
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                <div class="card first-color">
+                  <div class="card-body">
+                    <div class="float-right mt-2">
+                      <div id="total-revenue-chart"></div>
+                    </div>
+
+                    <div>
+                      <h4 class="mb-1 mt-1"><span data-plugin="counterup">34,152</span></h4>
+                      <p class="text-muted mb-0">
+                        جديد
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                <div class="card second-color">
+                  <div class="card-body">
+                    <div class="float-right mt-2">
+                      <div id="orders-chart"> </div>
+                    </div>
+                    <div>
+                      <h4 class="mb-1 mt-1"><span data-plugin="counterup">5,643</span></h4>
+                      <p class="text-muted mb-0">معالجة</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                <div class="card third-color">
+                  <div class="card-body">
+                    <div class="float-right mt-2">
+                      <div id="customers-chart"> </div>
+                    </div>
+
+                    <div>
+                      <h4 class="mb-1 mt-1"><span data-plugin="counterup">45,254</span></h4>
+                      <p class="text-muted mb-0">
+                        محلول
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                <div class="card four-color">
+                  <div class="card-body">
+                    <div class="float-right mt-2">
+                      <div id="growth-chart"></div>
+                    </div>
+
+                    <div>
+                      <h4 class="mb-1 mt-1"> <span data-plugin="counterup">12.58</span>%</h4>
+                      <p class="text-muted mb-0">مغلق</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-8 col-md-12 col-12 mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <div class="float-right">
+                          <div class="dropdown">
+                            <a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton5"
+                              data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                              <span class="font-weight-semibold">ترتيب حسب:</span> <span class="text-muted">السنه<i class="mdi mdi-chevron-down ml-1"></i></span>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                              <a class="dropdown-item" href="#">الشهر</a>
+                              <a class="dropdown-item" href="#">السنة</a>
+                              <a class="dropdown-item" href="#">الاسبوع</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <h4 class="card-title mb-4">
+                          احصائيات عامة
+                        </h4>
+
+                        <div class="mt-1">
+                          <ul class="list-inline main-chart mb-0">
+                            <li class="list-inline-item chart-border-left mr-0 border-0">
+                              <h3 class="text-primary">$<span data-plugin="counterup">2,371</span><span class="text-muted d-inline-block font-size-15 ml-3">جديد</span></h3>
+                            </li>
+
+                            <li class="list-inline-item chart-border-left mr-0">
+                              <h3><span data-plugin="counterup">258</span><span class="text-muted d-inline-block font-size-15 ml-3">معالجة</span>
+                              </h3>
+                            </li>
+
+                            <li class="list-inline-item chart-border-left mr-0">
+                              <h3><span data-plugin="counterup">3.6</span>%<span class="text-muted d-inline-block font-size-15 ml-3">محلول</span></h3>
+                            </li>
+
+                            <li class="list-inline-item chart-border-left mr-0">
+                              <h3><span data-plugin="counterup">3.6</span>%<span class="text-muted d-inline-block font-size-15 ml-3">مغلق</span></h3>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="mt-3">
+                          <div id="sales-analytics-chart" class="apex-charts" dir="ltr"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="text-center mb-3">
+                      التنبيهات
+                    </h4>
+
+                    <p class="mb-3">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                    </p>
+
+                    <p class="mb-3">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                    </p>
+
+                    <p class="mb-3">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                    </p>
+
+                    <p class="mb-2">
+                      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/dashboard.init.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
